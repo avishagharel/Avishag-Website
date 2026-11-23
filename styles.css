@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body { margin: 0; text-align: center; font-family: 'Poppins', sans-serif; font-weight: 400; color: #2c3e50; background-color: #fafcfb; line-height: 1.5; }
+section { padding: 24px 16px; }
+
+.hero-wrapper { position: relative; max-width: 900px; margin: 0 auto 16px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(20, 125, 120, 0.12); }
+.hero-wrapper img { display: block; width: 100%; height: 340px; object-fit: cover; }
+.hero-wrapper h2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0; font-size: 2.3rem; font-weight: 700; color: #ffffff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55); }
+
+h2 { font-size: 1.8rem; font-weight: 700; color: #147d78; margin: 0 0 12px 0; }
+h3 { font-size: 1.2rem; font-weight: 600; color: #147d78; margin: 10px 0 6px 0; }
+p { max-width: 600px; font-weight: 400; margin: 0 auto 12px auto; }
+
+.Skills { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; gap: 20px; max-width: 1100px; margin: 0 auto; background-color: #eef8f5; border: 1px solid #ccebe2; border-radius: 16px; }
+.Skills > h2 { width: 100%; color: #125c58; }
+
+.skill_card_UX_UI, .skill_card_Traveling, .skill_card_Information_Systems { flex: 1; min-width: 240px; display: flex; flex-direction: column; align-items: center; background-color: #ffffff; border: 1px solid #e2ece9; border-radius: 12px; padding: 18px; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.skill_card_UX_UI:hover, .skill_card_Traveling:hover, .skill_card_Information_Systems:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); }
+.skill_card_UX_UI img, .skill_card_Traveling img, .skill_card_Information_Systems img { width: 110px; height: 110px; object-fit: contain; margin-bottom: 6px; }
+.skill_card_UX_UI { border-top: 4px solid #147d78; }
+
+.skill_card_Traveling { border-top: 4px solid #e06d53; }
+.skill_card_Traveling h3 { color: #c8563c; }
+.skill_card_Information_Systems { border-top: 4px solid #e9a825; }
+.skill_card_Information_Systems h3 { color: #b87d0e; }
+
+.contact_me { padding: 28px 16px; margin: 16px auto; max-width: 1100px; border-radius: 16px; }
+.contact_me h2 { color: #c8563c; }
+.contact-message { max-width: 480px; margin: 10px auto 20px auto; }
+.btn { display: inline-block; background-color: #e06d53; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-weight: 600; border: 2px solid #e06d53; transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease; }
+.btn:hover { background-color: #147d78; border-color: #147d78; color: #ffffff; transform: translateY(-2px); }
+
+footer { background-color: #147d78; padding: 24px 16px; border-top: 4px solid #e9a825; }
+footer a { color: #9ce3c9; text-decoration: none; margin: 0 12px; font-weight: 600; transition: color 0.2s ease; }
+footer a:hover { color: #ffd166; }
+footer p { color: #e2f7f1; font-size: 0.85rem; font-weight: 400; margin: 12px auto 0 auto; }
+
+@media (max-width: 768px) {
+    .hero-wrapper h2 { font-size: 1.6rem; }
+    .Skills { flex-direction: column; align-items: stretch; }
+}
